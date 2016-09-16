@@ -1,0 +1,76 @@
+*********************************************************
+*
+*       Substitution Cipher C Program
+*
+*       created by: Robert Herrera / Brandon Radosevich
+
+**********************************************************
+
+- There are two main functionalites that can be used within
+ the program. You may either invoke and automatic decryption
+ process where frequency analysis used to create an initial key
+ and permute through the key comparing to a dictionary, or you 
+ may use enter your own key to generate a corresponding deciphered
+ text.
+
+
+ The final Resulting key that can be used to completely decrypt
+ the ciphertext is as follows:
+
+   HTYAPJGNEUKFMSCBZVLWRDQXOI
+   ETAOINSHRDLCUMWFGYPBVKJXQZ
+ 
+ Within key entrance functionality copy and paste the top row of cipher
+ letter ordering into the field from the above key. 
+ 
+  ** IN PROGRAM **
+  -ETAOINSHRDLCUMWFGYPBVKJXQZ
+  ->HTYAPJGNEUKFMSCBZVLWRDQXOI *****
+
+
+***************************************************************
+                     PROGRAM USE
+***************************************************************
+
+   // NOTE: ciphertext has been hard coded into program
+
+
+   // Resulting Frequency Mapping can be seen on both functions
+
+    Auto-Decrypt (Appx. 5 minute decrytion time)
+   ---------------------------------------------
+    make
+    ./sub_cipher -s 
+
+
+   - After attempt at decrytion you may manually 
+    swap any two letter within the ciphertext. The
+    mapped cipher ordering will automatically swap 
+    in the background. 
+    (i.e.)
+
+    Hi Hellx Hxw are yxu dxing txday?
+    
+    swap:x,o
+   
+    Hi Hello How are you doing today?
+
+
+
+
+    User Entered Key (Type or Copy/Paste Ordering)
+   ---------------------------------------------
+    make
+    ./sub_cipher -g 
+
+
+
+   EVENTHOUGHWEDONTKNOWWHICHCOMPANIESTHENSAHASCOMPROMISEDORBYWHATMEANSKNOWINGTHATTH
+EYCOULDHAVECOMPROMISEDANYOFTHEMISENOUGHTOMAKEUSMISTRUSTFULOFALLOFTHEMTHISISGOING
+TOMAKEITHARDFORLARGECOMPANIESLIKEGOOGLEANDMICROSOFTTOGETBACKTHETRUSTTHEYLOSTEVEN
+IFTHEYSUCCEEDINLIMITINGGOVERNMENTSURVEILLANCEEVENIFTHEYSUCCEEDINIMPROVINGTHEIROW
+NINTERNALSECURITYTHEBESTTHEYLLBEABLETOSAYISWEHAVESECUREDOURSELVESFROMTHENSAEXCEP
+TFORTHEPARTSTHATWEEITHERDONTKNOWABOUTORCANTTALKABOUT
+   
+
+ 

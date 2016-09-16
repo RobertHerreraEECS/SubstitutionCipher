@@ -1,0 +1,30 @@
+
+// LetterFrequency.h
+#ifndef FREQUENCYANALYSIS_H
+#define FREQUENCYANALYSIS_H
+#define KEY_SIZE 26
+
+typedef struct keyPhrase {
+    
+    char* word;
+    int  hits;
+    
+}KEY;
+
+
+typedef struct mappedKey {
+    
+    char cipherLetter;
+    char mappedLetter;
+    int  freq;
+    
+}keyMap;
+
+keyMap* letterFrequency(char * ciphertext,int shift);
+int keyComparison(char* deciphertext,keyMap* key,struct keyPhrase* dictionary,int size);
+void decrypt(char* ciphertext, keyMap* key,struct keyPhrase* dictionary,int size);
+char* calculateNoSwap(char* deciphertext,struct keyPhrase* dictionary,int size, char* noSwap);
+void sort(int *array, int num_elements, char *alphabet);
+
+
+#endif
